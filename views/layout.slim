@@ -5,34 +5,41 @@ html lang="en"
         meta http-equiv="X-UA-Compatible" content="IE=edge"/
         meta name="viewport" content="width=device-width, initial-scale=1.0"/
         title Document
-        link rel="stylesheet" href="style.css"/
+        link rel="stylesheet" href="/css/style.css"/
     body 
-
-    h1 NTI Johanneberg matmatch 
-
-
-    #grid_wrapper
-
-        header 
-
-        nav
-            .menyruta
-                a href="/hem" .icon src="img/plateicon.png" alt=""/ 
-          
-            .menyruta
-                a href="/hem" .icon src="img/spinnwheel.jpg" alt=""/ 
-          
-            .menyruta
-                a href="/hem" .icon src="img/bussicon" alt=""/ 
-          
-            .menyruta
-                a href="/hem" .icon src="img/utropsicon" alt=""/ 
-
-        section 
+        #grid_wrapper
+            header 
+                h1 NTI Johanneberg matmatch 
+            nav
+                .menyruta
+                    .lankruta
+                        a href="/hem" 
+                            img src="img/plateicon.png" alt="tallrik"/ 
                 
+                .menyruta
+                    .lankruta                
+                        a href="/hjul" 
+                            img src="img/spinnwheelicon.jpg" alt="snurrhjul"/ 
+                            /hur ska jag döpa img till klass 
+                
+                .menyruta
+                    .lankruta                
+                        a href="/buss"  
+                            img src="img/bussicon.png" alt="buss"/ 
+
+
+                .menyruta
+                    .lankruta                    
+                        a href="/sista" 
+                            img src="img/utropsicon.png" alt="utropstecken"/ 
+            
+            hr    
+            section 
+               
+                ==yield
 
 
 
 
 
-                      
+                        
