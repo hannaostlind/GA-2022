@@ -4,7 +4,7 @@ require 'sinatra/reloader'
 
 
 get('/hem') do
-    @platser[
+    @platser = [
     "Aleppo", 
     "Burger King", 
     "Baguetterian", 
@@ -15,11 +15,14 @@ get('/hem') do
     "Le pain", 
     "Pita", 
     "Seaside", 
-    "Subway; Domkyrkan", "Subway; Kungsportsplatsen", "Subway; Olivedal", 
+    "Subway; Domkyrkan", 
+    "Subway; Kungsportsplatsen", 
+    "Subway; Olivedal", 
     "Sushi Vimi", 
     "Taj Mahal", 
     "Picaldei", 
-    "7-eleven; Nordstan", "7-eleven; Göteborg Central"]
+    "7-eleven; Nordstan", 
+    "7-eleven; Göteborg Central"]
     slim(:hem)
 end
 
@@ -34,3 +37,5 @@ end
 get('/') do
 
 end
+
+
