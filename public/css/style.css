@@ -20,19 +20,19 @@
 
 header {
     grid-area: he;
-    background-color: rgb(185, 243, 88);
+    background-color: rgb(203, 255, 105);
 }
 
 nav {
     grid-area: na;
-    background-color: rgb(185, 243, 88);
+    background-color: rgb(203, 255, 105);
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
 }
 
 section {
-    background-color: rgb(185, 243, 88);
+    background-color: rgb(203, 255, 105);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +66,7 @@ img{
 
 .svar {
     margin: 2rem;
-    background-color: aliceblue;
+    background-color: springgreen;
     border: 0.2rem;
     border-color: black;
     border-radius: 1rem;
@@ -89,7 +89,7 @@ hr {
 }
 
 .custom-select {
-    border: brown;
+    border: black;
     width: 15rem;
 }
 
