@@ -20,26 +20,26 @@
 
 header {
     grid-area: he;
-    background-color: rgb(203, 255, 105);
+    background-color: rgb(168, 255, 102);
 }
 
 nav {
     grid-area: na;
-    background-color: rgb(203, 255, 105);
+    background-color: rgb(168, 255, 102);
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
 }
 
 section {
-    background-color: rgb(203, 255, 105);
+    background-color: rgb(168, 255, 102);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .lankruta {
-    background-color: rgb(150, 209, 53);
+    background-color: rgb(248, 255, 242);
     width: 7.1rem;
     height: 5.5rem;
     border-top-left-radius: 1.3rem;
@@ -66,7 +66,7 @@ img{
 
 .svar {
     margin: 2rem;
-    background-color: springgreen;
+    background-color: paleturquoise;
     border: 0.2rem;
     border-color: black;
     border-radius: 1rem;
