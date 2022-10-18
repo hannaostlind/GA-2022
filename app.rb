@@ -38,4 +38,10 @@ get('/') do
 
 end
 
+post('craving') do
+    data = params[:secret]
+    puts data
+
+    redirect('/hem')
+end
 
