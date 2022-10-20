@@ -20,26 +20,27 @@
 
 header {
     grid-area: he;
-    background-color: rgb(168, 255, 102);
+    background-color: rgb(255, 0, 0);
+    background: ;
 }
 
 nav {
     grid-area: na;
-    background-color: rgb(168, 255, 102);
+    background-color: rgb(255, 0, 0);
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
 }
 
 section {
-    background-color: rgb(168, 255, 102);
+    background-color: rgb(115, 227, 55);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .lankruta {
-    background-color: rgb(248, 255, 242);
+    background-color:  rgb(115, 227, 55);
     width: 7.1rem;
     height: 5.5rem;
     border-top-left-radius: 1.3rem;
@@ -62,6 +63,8 @@ img{
 
 .fragor {
     margin-top: 3.2rem;
+    display: grid;
+    place-content: center;
 }
 
 .svar {
@@ -76,6 +79,7 @@ img{
     flex-direction: column;
     align-items: center;
     min-height: 5rem;
+
 }
 
 hr {
@@ -84,29 +88,34 @@ hr {
     background-color: black;
 }
 
-#valja2 {
-    background-color: aqua;
-}
-
-.custom-select {
-    border: black;
-    width: 15rem;
-}
-
-select {
-    background-color: rgb(54, 117, 0);
+.fraga {
+    background-color: rgb(241, 255, 228);
     border: brown;
     border-width: 5px;
     border-style: solid;
-    border: 5px solid brown;
+    border: 1.5px groove gray;
     width: 15rem;
     height: 2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 option {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.fragatext {
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 0.2rem;
+}
+
+.knapp {
+    width: 6rem;
+    height: 3rem;
+}
+
+
+
 
   
+

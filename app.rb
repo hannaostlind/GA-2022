@@ -3,27 +3,80 @@ require 'slim'
 require 'sinatra/reloader'
 
 
-get('/hem') do
-    @platser = [
-    "Aleppo", 
-    "Burger King", 
-    "Baguetterian", 
-    "Cafét", 
-    "Coop", 
-    "Golden Lee", 
-    "Jättebaguetten", 
-    "Le pain", 
-    "Pita", 
-    "Seaside", 
-    "Subway; Domkyrkan", 
-    "Subway; Kungsportsplatsen", 
-    "Subway; Olivedal", 
-    "Sushi Vimi", 
-    "Taj Mahal", 
-    "Picaldei", 
-    "7-eleven; Nordstan", 
-    "7-eleven; Göteborg Central"]
+get('/') do
+
     slim(:hem)
+end
+
+post('/raknare') do
+    rasttid = params[:rasttid]
+    sugenpa = params[:sugenpa]
+
+    if rasttid.class != Integer
+
+        slim(:hem)
+    end
+
+    platser = {
+
+        ingetetspec: [
+        "Aleppo", 
+        "Burger King", 
+        "Baguetterian", 
+        "Cafét", 
+        "Coop", 
+        "Golden Lee", 
+        "Jättebaguetten", 
+        "Le pain", 
+        "Pita", 
+        "Seaside", 
+        "Subway; Domkyrkan", 
+        "Subway; Kungsportsplatsen", 
+        "Subway; Olivedal", 
+        "Sushi Vimi", 
+        "Taj Mahal", 
+        "Picaldei", 
+        "Wasa pizza",
+        "7-eleven; Nordstan", 
+        "7-eleven; Göteborg Central"],
+
+        sitta: [
+        "Burger King", 
+        "Cafét", 
+        "Golden Lee", 
+        "Le pain", 
+        "Seaside", 
+        "Subway; Domkyrkan", 
+        "Subway; Kungsportsplatsen", 
+        "Subway; Olivedal"],
+
+        mktmat: [
+        "Coop", 
+        "Le pain", 
+        "Seaside", 
+        "Subway; Olivedal", 
+        "Wasa pizza"],
+
+        snabb: [
+        "Baguetterian", 
+        "Cafét", 
+        "Coop", 
+        "Jättebaguetten", 
+        "Pita"],
+
+        snacks: [
+        "Bagutterian", 
+        "Cafét", 
+        "Coop", 
+        "Jättebaguetten???", 
+        "Subway: Olivedal", 
+        "7-eleven; Nordstan", 
+        "7-eleven; Göteborg Central"]
+
+    }
+
+    @stallen = []
+
 end
 
 get('/hjul') do
@@ -34,14 +87,5 @@ get('/tabell') do
 
 end
 
-get('/') do
 
-end
-
-post('craving') do
-    data = params[:secret]
-    puts data
-
-    redirect('/hem')
-end
 

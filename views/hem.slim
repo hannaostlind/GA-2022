@@ -1,19 +1,21 @@
 
 
 .fragor
-    h2 Min rast tid är...  
-    .frageruta
 
+    .fragatext Min rast tid är...
 
-.fragor
-    h2 Jag är sugen på...
-    .custom-select
-        select
-            <option value="0">Inget speciellt</option>
-            <option value="1">Att sitta ned</option>
-            <option value="2">Mycket mat</option>
-            <option value="3">En snabb lunch</option>
-            <option value="4">Snacks</option>
+    form action="/design_pattern" method="POST"
+        input class="fraga"type="text" placeholder="minuter" name="rasttid"/
+        input class="knapp" type="submit" value="Hitta matställe"/
+    
+    .fragatext Jag är sugen på...
+    select class="fraga"
+        option value="0" ...
+        option value="1" name="sugenpa"Inget speciellt            
+        option value="2" name="sugenpa"Att sitta ned
+        option value="3" name="sugenpa"Mycket mat
+        option value="4" name="sugenpa"En snabb lunch                
+        option value="5" name="sugenpa" Snacks
 
   
 .svar 
