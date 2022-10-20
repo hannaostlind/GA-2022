@@ -21,7 +21,7 @@
 header {
     grid-area: he;
     background-color: rgb(255, 0, 0);
-    background: ;
+    background:;
 }
 
 nav {
@@ -52,6 +52,10 @@ section {
 img{
     width: 5rem;
     height: 4rem;
+}
+
+.wheel {
+    size: 20px;
 }
 
 .frageruta {
