@@ -77,6 +77,7 @@ post('/raknare') do
 
     @stallen = []
 
+
 end
 
 get('/hjul') do
