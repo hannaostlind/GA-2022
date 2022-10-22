@@ -35,7 +35,7 @@ post('/raknare') do
         "Subway; Olivedal", 
         "Sushi Vimi", 
         "Taj Mahal", 
-        "Picaldei", 
+        "Picadeli", 
         "Wasa pizza",
         "7-eleven; Nordstan", 
         "7-eleven; Göteborg Central"],
