@@ -20,7 +20,6 @@ post('/raknare') do
     platser = {
 
         ingetetspec: [
-        "Aleppo", 
         "Burger King", 
         "Baguetterian", 
         "Cafét", 
@@ -36,7 +35,7 @@ post('/raknare') do
         "Sushi Vimi", 
         "Taj Mahal", 
         "Picadeli", 
-        "Wasa pizza",
+        "Wasa Pizza",
         "7-eleven; Nordstan", 
         "7-eleven; Göteborg Central"],
 
