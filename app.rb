@@ -8,15 +8,14 @@ get('/') do
     slim(:hem)
 end
 
-post('/raknare') do
+post('/design_pattern') do
     rasttid = params[:rasttid]
     sugenpa = params[:sugenpa]
 
     if rasttid.class != Integer
-
-        slim(:hem)
+        redirect('/hjul')
     end
-
+    
     platser = {
 
         ingetetspec: [
@@ -76,6 +75,11 @@ post('/raknare') do
 
     @stallen = []
 
+    if rasttid.class != Integer
+        redirect('/hjul')
+    else
+        redirect('/hjul')
+    end
 
 end
 
