@@ -1,24 +1,20 @@
 
 
-.fragor
-    
-    .fraga12
-        .fragatext Jag är sugen på...
-        select class="fraga"
-            option value="0" ...
-            option value="1" name="sugenpa"Inget speciellt            
-            option value="2" name="sugenpa"Att sitta ned
-            option value="3" name="sugenpa"Mycket mat
-            option value="4" name="sugenpa"En snabb lunch                
-            option value="5" name="sugenpa" Snacks
+       
+form class="fraga12" action="/design_pattern" method="POST"
+    input class="fraga" id="fragaextra" type="number" placeholder=" I minuter, heltal och utan bokstäver tack!" name="rasttid"/
+    select class="fraga" name="sugenpa"
+        option value="ingetspeciellt" Inget speciellt            
+        option value="attsittaned" Att sitta ned
+        option value="mycketmat" Mycket mat
+        option value="ensnabblunch" En snabb lunch                
+        option value="snacks" Snacks
+    input class="knapp" type="submit" value="Hitta matställe"/
 
-    .fraga12
-        .fragatext Min rast tid är...
-        form class="fraga12" action="/design_pattern" method="POST"
-            input class="fraga" id="fragaextra" type="text" placeholder=" I minuter, heltal och utan bokstäver tack!" name="rasttid"/
-            input class="knapp" type="submit" value="Hitta matställe"/
+#fragatext 
+        h1 Jag är sugen på...
+        h1 Min rast tid är...
 
-  
 .svar 
     h2 Dina toppval är: 
     p hej 

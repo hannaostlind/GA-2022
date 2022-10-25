@@ -8,78 +8,101 @@ get('/') do
     slim(:hem)
 end
 
+enable :sessions
+
 post('/design_pattern') do
     rasttid = params[:rasttid]
     sugenpa = params[:sugenpa]
 
     if rasttid.class != Integer
-        redirect('/hjul')
+        redirect('/')
     end
     
+    stallen = []
+
     platser = {
 
-        ingetetspec: [
-        "Burger King", 
-        "Baguetterian", 
-        "Cafét", 
-        "Coop", 
-        "Golden Lee", 
-        "Jättebaguetten", 
-        "Le pain", 
-        "Pita", 
-        "Seaside", 
-        "Subway; Domkyrkan", 
-        "Subway; Kungsportsplatsen", 
-        "Subway; Olivedal", 
-        "Sushi Vimi", 
-        "Taj Mahal", 
-        "Picadeli", 
-        "Wasa Pizza",
-        "7-eleven; Nordstan", 
-        "7-eleven; Göteborg Central"],
+        "ingetspeciellt" => {
+            siffra1: [
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét", 
+                "Coop",
+                "Pita", 
+                "Le pain",
+                "Burger King", 
+                "Golden Lee", 
+                "Seaside", 
+                "Subway; Domkyrkan", 
+                "Subway; Kungsportsplatsen", 
+                "Subway; Olivedal", 
+                "Sushi Vimi", 
+                "Taj Mahal", 
+                "Picadeli", 
+                "Wasa Pizza",
+                "7-eleven; Nordstan", 
+                "7-eleven; Göteborg Central"],
 
-        sitta: [
-        "Burger King", 
-        "Cafét", 
-        "Golden Lee", 
-        "Le pain", 
-        "Seaside", 
-        "Subway; Domkyrkan", 
-        "Subway; Kungsportsplatsen", 
-        "Subway; Olivedal"],
+            siffra2: [
 
-        mktmat: [
-        "Coop", 
-        "Le pain", 
-        "Seaside", 
-        "Subway; Olivedal", 
-        "Wasa pizza"],
+            ]
+        },
 
-        snabb: [
-        "Baguetterian", 
-        "Cafét", 
-        "Coop", 
-        "Jättebaguetten", 
-        "Pita"],
+        "sitta" => {
+            siffra1: [
 
-        snacks: [
-        "Bagutterian", 
-        "Cafét", 
-        "Coop", 
-        "Jättebaguetten???", 
-        "Subway: Olivedal", 
-        "7-eleven; Nordstan", 
-        "7-eleven; Göteborg Central"]
+            ],
 
+            siffra2: [
+
+            ]
+        },
+
+        "mycketmat" => {
+            siffra1: [
+
+            ],
+
+            siffra2: [
+
+            ]            
+        },
+
+        "snabb" => {
+            siffra1: [
+
+            ],
+
+            siffra2: [
+
+            ]
+        },
+
+        "snacks" => {
+            siffra1: [
+
+            ],
+
+            siffra2: [
+
+            ]
+        }
     }
 
-    @stallen = []
+    case
+    when sugenpa == ingetspeciellt
 
-    if rasttid.class != Integer
-        redirect('/hjul')
-    else
-        redirect('/hjul')
+        case
+        when rasttid <= 60
+                stallen << platser["ingetspeciellt"][:siffra2]
+        end
     end
+
+
+
+
+
+    
 
 end
 

@@ -2,13 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=DM+Serif+Display&family=Overpass:wght@300&display=swap');
 
+/*GRID och GRUND*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/*Grid och grund*/
 
 #grid_wrapper {
     display: grid;
@@ -41,6 +41,8 @@ section {
     align-items: center;
 }
 
+/*NAV*/
+
 .lankruta {
     background-color:  rgb(115, 227, 55);
     width: 7.1rem;
@@ -60,19 +62,68 @@ img{
     size: 20px;
 }
 
-.frageruta {
-    width: 15rem;
-    height: 2rem;
-    background-color: rgb(54, 117, 0);
-    margin-top: 0.2rem;
+hr {
+    height: 0.3rem;
+    width: 100%;
+    background-color: black;
 }
 
-.fragor {
-    margin-top: 3.2rem;
+/*TEXTER*/
+
+h1 {
+    font-size: 2rem;
+    width: 25rem;
+    height: 2rem;
     display: grid;
+    place-content: center;
+    font-family: 'Baloo 2', cursive;
+}
+
+/*HEM*/
+
+.fraga12 {
+    width: 16rem;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fraga {
+    background-color: rgb(241, 255, 228);
+    border-style: solid;
+    border: 1.5px groove gray;
+    width: 15rem;
+    height: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 6.25rem;
+    z-index: 1;
+}
+
+#fragatext {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4.20rem;
+    height: 10.30rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.knapp {
+    width: 6rem;
+    height: 3rem;
+    font-size: 0.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+}
+
+#fragaextra {
+    font-size: 0.6rem;
+}
+
+option {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .svar {
@@ -87,58 +138,14 @@ img{
     flex-direction: column;
     align-items: center;
     min-height: 5rem;
-
-}
-
-hr {
-    height: 0.3rem;
-    width: 100%;
-    background-color: black;
-}
-
-.fraga {
-    background-color: rgb(241, 255, 228);
-    border-style: solid;
-    border: 1.5px groove gray;
-    width: 15rem;
-    height: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#fragaextra {
-    font-size: 0.6rem;
-}
-option {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
-.fragatext {
-    font-size: 2rem;
-    margin-top: 50px;
-    margin-bottom: 0.2rem;
-    font-family: 'Baloo 2', cursive;
-}
-
-.knapp {
-    width: 6rem;
-    height: 3rem;
-    font-size: 0.7rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 20px;
-
-}
-
-.fraga12 {
-    width: 16rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
 
-/*hjul*/
+
+
+/*HJUL*/
   
 .mainbox{
 position: relative;
