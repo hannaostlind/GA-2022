@@ -2,27 +2,33 @@ require 'sinatra'
 require 'slim'
 require 'sinatra/reloader'
 
+enable :sessions
 
 get('/') do
-
     slim(:hem)
 end
 
-enable :sessions
+get('/hjul') do
+    slim(:hjul)
+end
+
+get('/tabell') do
+    slim(:buss)
+end
 
 post('/design_pattern') do
-    rasttid = params[:rasttid]
+    rasttid = params[:rasttid].to_i
     sugenpa = params[:sugenpa]
+    stallen = []
+
 
     if rasttid.class != Integer
-        redirect('/')
+        
     end
-    
-    stallen = []
 
     platser = {
 
-        "ingetspeciellt" => {
+        ingetspeciellt: {
             siffra1: [
                 "Baguetterian",
                 "Jättebaguetten",
@@ -48,7 +54,7 @@ post('/design_pattern') do
             ]
         },
 
-        "sitta" => {
+        sitta: {
             siffra1: [
 
             ],
@@ -58,7 +64,7 @@ post('/design_pattern') do
             ]
         },
 
-        "mycketmat" => {
+        mycketmat: {
             siffra1: [
 
             ],
@@ -68,7 +74,7 @@ post('/design_pattern') do
             ]            
         },
 
-        "snabb" => {
+        snabb: {
             siffra1: [
 
             ],
@@ -78,7 +84,7 @@ post('/design_pattern') do
             ]
         },
 
-        "snacks" => {
+        snacks: {
             siffra1: [
 
             ],
@@ -90,29 +96,14 @@ post('/design_pattern') do
     }
 
     case
-    when sugenpa == ingetspeciellt
+    when sugenpa == "ingetspeciellt"
 
         case
         when rasttid <= 60
-                stallen << platser["ingetspeciellt"][:siffra2]
+            session[:stallen] = platser[:ingetspeciellt][:siffra1]
         end
     end
-
-
-
-
-
     
-
+    redirect('/')
 end
-
-get('/hjul') do
-    slim(:hjul)
-end
-
-get('/tabell') do
-
-end
-
-
 
