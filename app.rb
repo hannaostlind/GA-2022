@@ -2,7 +2,7 @@ require 'sinatra'
 require 'slim'
 require 'sinatra/reloader'
 
-enable :sessions
+
 
 get('/') do
     slim(:hem)
@@ -15,6 +15,8 @@ end
 get('/tabell') do
     slim(:buss)
 end
+
+enable :sessions
 
 post('/matstallen') do
     rasttid = params[:rasttid].to_i
@@ -50,8 +52,11 @@ post('/matstallen') do
                 "7-eleven; Göteborg Central"],
 
             siffra2: [
-
-            ]
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét", 
+                "Coop",
+                "Pita"]
         },
 
         sitta: {
@@ -99,8 +104,11 @@ post('/matstallen') do
     when sugenpa == "ingetspeciellt"
 
         case
-        when rasttid <= 60
+        when rasttid <= 60 && rasttid >= 30
             session[:stallen] = platser[:ingetspeciellt][:siffra1]
+
+        when rasttid <= 30
+            session[:stallen] = platser[:ingetspeciellt][:siffra2]
         end
     end
     
