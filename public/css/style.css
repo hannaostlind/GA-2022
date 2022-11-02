@@ -23,6 +23,8 @@
 header {
     grid-area: he;
     background: rgb(134, 192, 33);
+    display: grid;
+    place-content: center;
 
 }
 
@@ -79,6 +81,11 @@ h1 {
     display: grid;
     place-content: center;
     font-family: 'Baloo 2', cursive;
+}
+
+#titel {
+    font-size: 3rem;
+    text-align: center;
 }
 
 /*HEM*/
@@ -149,6 +156,8 @@ option {
 #lista {
     list-style: none;
 }
+
+
 
 /*HJUL*/
   
