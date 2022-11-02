@@ -217,6 +217,26 @@ top: 0;
 left: 120px;
 }
   
+.span5{
+clip-path: polygon(0 92%, 100% 50%, 0 8%);
+background-color: #00aeff;
+top: 120px;
+left: 0;
+}
+
+.span6{
+clip-path: polygon(0 92%, 100% 50%, 0 8%);
+background-color: #ea00ff;
+top: 120px;
+left: 0;
+}
+
+.span7{
+    clip-path: polygon(0 92%, 100% 50%, 0 8%);
+    background-color: #ff5e00;
+    top: 120px;
+    left: 0;
+    }
 
 .box1 .span3 b{
     transform: translate(-50%, -50%) rotate(-270deg);
