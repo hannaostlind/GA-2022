@@ -153,82 +153,82 @@ option {
 /*HJUL*/
   
 .mainbox{
-position: relative;
-width: 500px;
-height: 500px;
-margin: 50px;
-transform: rotate(-90deg);
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    transform: rotate(-90deg);
 }
 
 .mainbox:after{
-position: absolute;
-content: '';
-width: 32px;
-height: 32px;
-background: url('/img/arrow-left.png') no-repeat;
-background-size: 32px;
-right: -30px;
-top: 50%;
-transform: translateY(-50%);
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url('/img/arrow-left.png') no-repeat;
+    background-size: 32px;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .box{
-width: 100%;
-height: 100%;
-position: relative;
-border-radius: 50%;
-border: 10px solid #fff;
-overflow: hidden;
-transition: all ease 5s;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    overflow: hidden;
+    transition: all ease 5s;
 }
   
 span{
-width: 50%;
-height: 50%;
-display: inline-block;
-position: absolute;
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
 }
 
 .span1{
-clip-path: polygon(0 92%, 100% 50%, 0 8%);
-background-color: #fffb00;
-top: 120px;
-left: 0;
+    clip-path: polygon(0 92%, 100% 50%, 0 8%);
+    background-color: #fffb00;
+    top: 120px;
+    left: 0;
 }
 
 .span2{
-clip-path: polygon(100% 92%, 0 50%, 100% 8%);
-background-color: #ff4fa1;
-top: 120px;
-right: 0;
+    clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+    background-color: #ff4fa1;
+    top: 120px;
+    right: 0;
 }
 
 .span3{
-clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
-background-color: #ffaa00;
-bottom: 0;
-left: 120px;
+    clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+    background-color: #ffaa00;
+    bottom: 0;
+    left: 120px;
 }
 
 .span4{
-clip-path: polygon(50% 100%, 92% 0, 8% 0);
-background-color: #22ff00;
-top: 0;
-left: 120px;
+    clip-path: polygon(50% 100%, 92% 0, 8% 0);
+    background-color: #22ff00;
+    top: 0;
+    left: 120px;
 }
   
 .span5{
-clip-path: polygon(0 92%, 100% 50%, 0 8%);
-background-color: #00aeff;
-top: 120px;
-left: 0;
+    clip-path: polygon(0 92%, 100% 50%, 0 8%);
+    background-color: #00aeff;
+    top: 120px;
+    left: 0;
 }
 
 .span6{
-clip-path: polygon(0 92%, 100% 50%, 0 8%);
-background-color: #ea00ff;
-top: 120px;
-left: 0;
+    clip-path: polygon(0 92%, 100% 50%, 0 8%);
+    background-color: #ea00ff;
+    top: 120px;
+    left: 0;
 }
 
 .span7{
@@ -236,7 +236,14 @@ left: 0;
     background-color: #ff5e00;
     top: 120px;
     left: 0;
-    }
+}
+
+.span8{
+    clip-path: polygon(0 92%, 100% 50%, 0 8%);
+    background-color: #fffb00;
+    top: 120px;
+    left: 0;
+}
 
 .box1 .span3 b{
     transform: translate(-50%, -50%) rotate(-270deg);
