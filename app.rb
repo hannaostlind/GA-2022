@@ -21,7 +21,6 @@ enable :sessions
 post('/matstallen') do
     rasttid = params[:rasttid].to_i
     sugenpa = params[:sugenpa]
-    stallen = []
 
 
     if rasttid.class != Integer
