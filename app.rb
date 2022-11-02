@@ -16,7 +16,7 @@ get('/tabell') do
     slim(:buss)
 end
 
-post('/design_pattern') do
+post('/matstallen') do
     rasttid = params[:rasttid].to_i
     sugenpa = params[:sugenpa]
     stallen = []
