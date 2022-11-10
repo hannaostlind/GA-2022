@@ -186,97 +186,58 @@ option {
     height: 100%;
     position: relative;
     border-radius: 50%;
-<<<<<<< Updated upstream
-    /*border: 10px solid #fff;*/
-=======
     border: 10px solid #fff;
->>>>>>> Stashed changes
     overflow: hidden;
     transition: all ease 5s;
 }
   
 span{
-<<<<<<< Updated upstream
-    width: 50%;
-=======
     width: 50%; 
->>>>>>> Stashed changes
     height: 50%;
     display: inline-block;
     position: absolute;
 }
 
 .span1{
-<<<<<<< Updated upstream
-    clip-path: polygon(0 46%, 100% 50%, 0 8%);
-    background-color: #ff0000;
-=======
     clip-path: polygon(0 92%, 100% 50%, 0 8%);
     background-color: #fffb00;
->>>>>>> Stashed changes
     top: 120px;
     left: 0;
 }
 
 .span2{
-<<<<<<< Updated upstream
-    clip-path: polygon(100% 46%, 0 50%, 100% 8%);
-    background-color: #ffae00;
-=======
     clip-path: polygon(100% 92%, 0 50%, 100% 8%);
     background-color: #ff4fa1;
->>>>>>> Stashed changes
     top: 120px;
     right: 0;
 }
 
 .span3{
-<<<<<<< Updated upstream
-    clip-path: polygon(50% 0%, 8% 100%, 46% 100%);
-    background-color: #fffb00;
-=======
     clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
     background-color: #ffaa00;
->>>>>>> Stashed changes
     bottom: 0;
     left: 120px;
 }
 
 .span4{
-<<<<<<< Updated upstream
-    clip-path: polygon(50% 100%, 46% 0, 8% 0);
-=======
     clip-path: polygon(50% 100%, 92% 0, 8% 0);
->>>>>>> Stashed changes
     background-color: #22ff00;
     top: 0;
     left: 120px;
 }
   
 .span5{
-<<<<<<< Updated upstream
-    clip-path: polygon(0 46%, 100% 50%, 0 8%);
-    background-color: #00ffd9;
-=======
     clip-path: polygon(0 92%, 100% 50%, 0 8%);
     background-color: #00aeff;
->>>>>>> Stashed changes
     top: 120px;
     left: 0;
 }
 
 .span6{
-<<<<<<< Updated upstream
-    clip-path: polygon(100% 46%, 0 50%, 100% 8%);
-    background-color: #1900ff;
-    top: 120px;
-    right: 0;
-=======
     clip-path: polygon(0 92%, 100% 50%, 0 8%);
     background-color: #ea00ff;
     top: 120px;
     left: 0;
->>>>>>> Stashed changes
 }
 
 .span7{
@@ -292,8 +253,6 @@ span{
     top: 120px;
     left: 0;
 }
-<<<<<<< Updated upstream
-=======
 
 .span7{
     clip-path: polygon(0 92%, 100% 50%, 0 8%);
@@ -301,7 +260,6 @@ span{
     top: 120px;
     left: 0;
 }
->>>>>>> Stashed changes
 
 .box1 .span3 b{
     transform: translate(-50%, -50%) rotate(-270deg);
