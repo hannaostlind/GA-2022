@@ -17,8 +17,8 @@ form class="fraga12" action="/matstallen" method="POST"
 
 .svar 
     h2 Dina topp val är: 
-    #lista 
-        ol  
+    article  
+        ul id="lista"
             - if session[:stallen] != nil 
                 - session[:stallen].each do |matstallen|
                     li = matstallen 
