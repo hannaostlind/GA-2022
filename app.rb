@@ -46,7 +46,7 @@ post('/matstallen') do
                 "Sushi Vimi", 
                 "Taj Mahal", 
                 "Picadeli", 
-                "Wasa Pizza",
+                "Vasa Pizza",
                 "7-eleven; Nordstan", 
                 "7-eleven; Göteborg Central"],
 
@@ -54,18 +54,33 @@ post('/matstallen') do
                 "Baguetterian",
                 "Jättebaguetten",
                 "Cafét", 
-                "Coop",
                 "Pita"]
         },
 
         sitta: {
-            siffra1: [
-
+            u25: [
+            "Baguetterian",
+            "Jättebaguetten",
+            "Cafét",
+            "Pita"
             ],
 
-            siffra2: [
+            u55: [
+            "Le Pain",
+            ],
 
+            u80: [
+            "Golden Lee", 
+            "Seaside", 
+            "Subway; Domkyrkan", 
+            "Subway; Kungsportsplatsen", 
+            "Subway; Olivedal", 
+            "Sushi Vimi", 
+            "Taj Mahal", 
+            "Picadeli", 
+            "Vasa Pizza",
             ]
+
         },
 
         mycketmat: {
