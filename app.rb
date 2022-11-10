@@ -98,10 +98,10 @@ post('/matstallen') do
             ]
         }
     }
-
+   
     case
     when sugenpa == "ingetspeciellt"
-
+        
         case
         when rasttid <= 60 && rasttid >= 30
             session[:stallen] = platser[:ingetspeciellt][:siffra1]

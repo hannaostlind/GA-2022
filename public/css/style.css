@@ -186,7 +186,7 @@ option {
     height: 100%;
     position: relative;
     border-radius: 50%;
-    border: 10px solid #fff;
+    /*border: 10px solid #fff;*/
     overflow: hidden;
     transition: all ease 5s;
 }
@@ -199,57 +199,57 @@ span{
 }
 
 .span1{
-    clip-path: polygon(0 92%, 100% 50%, 0 8%);
-    background-color: #fffb00;
+    clip-path: polygon(0 46%, 100% 50%, 0 8%);
+    background-color: #ff0000;
     top: 120px;
     left: 0;
 }
 
 .span2{
-    clip-path: polygon(100% 92%, 0 50%, 100% 8%);
-    background-color: #ff4fa1;
+    clip-path: polygon(100% 46%, 0 50%, 100% 8%);
+    background-color: #ffae00;
     top: 120px;
     right: 0;
 }
 
 .span3{
-    clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
-    background-color: #ffaa00;
+    clip-path: polygon(50% 0%, 8% 100%, 46% 100%);
+    background-color: #fffb00;
     bottom: 0;
     left: 120px;
 }
 
 .span4{
-    clip-path: polygon(50% 100%, 92% 0, 8% 0);
+    clip-path: polygon(50% 100%, 46% 0, 8% 0);
     background-color: #22ff00;
     top: 0;
     left: 120px;
 }
   
 .span5{
-    clip-path: polygon(0 92%, 100% 50%, 0 8%);
-    background-color: #00aeff;
+    clip-path: polygon(0 46%, 100% 50%, 0 8%);
+    background-color: #00ffd9;
     top: 120px;
     left: 0;
 }
 
 .span6{
-    clip-path: polygon(0 92%, 100% 50%, 0 8%);
-    background-color: #ea00ff;
+    clip-path: polygon(100% 46%, 0 50%, 100% 8%);
+    background-color: #1900ff;
     top: 120px;
-    left: 0;
+    right: 0;
 }
 
 .span7{
-    clip-path: polygon(0 92%, 100% 50%, 0 8%);
-    background-color: #ff5e00;
-    top: 120px;
-    left: 0;
+    clip-path: polygon(50% 0%, 8% 100%, 46% 100%);
+    background-color: #e100ff;
+    bottom: 0;
+    left: 120px;
 }
 
 .span8{
-    clip-path: polygon(0 92%, 100% 50%, 0 8%);
-    background-color: #fffb00;
+    clip-path: polygon(0 45%, 100% 50%, 0 8%);
+    background-color: #ff00f7;
     top: 120px;
     left: 0;
 }
@@ -284,7 +284,6 @@ span{
 
 span b{
     font-size: 22px;
-
     position: absolute;
     top: 50%;
     left: 50%;
