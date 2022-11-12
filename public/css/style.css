@@ -119,16 +119,39 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.knapp {
+#knapp {
     width: 6rem;
-    height: 3rem;
+    height: 2.7rem;
     font-size: 0.7rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 20px;
+    background-color: rgb(241, 255, 228);
 }
 
-#fragaextra {
-    font-size: 0.6rem;
+#sokruta {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border: 1.5px groove gray;
+    width: 11rem;
+    height: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.65rem;
+    bottom: -45%;
+    right: 15%;
+    z-index: 10;
+}
+
+#knapp2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 3rem;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+}
+
+#hej {
+    background-color: #7700ff;
+    z-index: 100;
 }
 
 option {
