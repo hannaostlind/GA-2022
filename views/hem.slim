@@ -1,8 +1,7 @@
 
-
-       
+      
 form class="fraga12" action="/matstallen" method="POST"
-    input class="fraga" type="number" placeholder=" I minuter" name="rasttid"/
+    input class="fraga" type="number" placeholder=" I minuter" step="5" name="rasttid"/
     select class="fraga" name="sugenpa"
         option value="ingetspeciellt" Inget speciellt            
         option value="attsittaned" Att sitta ned
@@ -26,10 +25,10 @@ form class="fraga12" action="/matstallen" method="POST"
             - else 
                 p
 
+- if session[:lank] == nil 
+    - session[:lank] = 0
 
-/<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2132.526952860847!2d11.974780599999997!3d57.6905167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff30cb0e6c031%3A0x512e1a3cb4192a9!2sNTI%20Gymnasiet%20Johanneberg!5e0!3m2!1ssv!2sse!4v1668247435575!5m2!1ssv!2sse" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d#{session[:lank]}" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d#{session[:lank]}" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     form id="hej" action="/karta" method="POST"
         select id="sokruta" name="kartstalle"
             option value="o"NTI Johanneberg 
@@ -50,10 +49,6 @@ form class="fraga12" action="/matstallen" method="POST"
             option value="15"Vasa Pizza
             option value="16"7 eleven; nordstan                
             option value="17"7 eleven; Göteborg Central
-            input id="knapp2" type="submit" value="Hitta"/
-
-
-
-                 
+        input id="knapp2" type="submit" value="Hitta"/
 
 

@@ -32,8 +32,9 @@ nav {
     grid-area: na;
     background: rgb(134, 192, 33);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: flex-end;
+    padding-left: 20px;
 }
 
 section {
@@ -48,22 +49,30 @@ section {
 
 .lankruta {
     background-color: rgb(185, 243, 88);
-    width: 7.1rem;
-    height: 5.5rem;
+    width: 170px;
+    height: 110px;
     border-top-left-radius: 1.3rem;
     border-top-right-radius: 1.3rem;
     display: grid;
     place-content: center;
+    margin-left: 30px;
 }
 
-img{
-    width: 5rem;
-    height: 4rem;
+#tryckruta {
+    height: 9rem;
 }
 
-.wheel {
+.bild{
+    width: 110px;
+}
+
+.lankruta:hover {
+    height: 120px;
+}
+
+/*.wheel {
     size: 20px;
-}
+}*/
 
 hr {
     height: 0.3rem;
@@ -71,6 +80,8 @@ hr {
     background: rgb(44, 109, 0);
     border-style: none;
 }
+
+
 
 /*TEXTER*/
 
@@ -130,6 +141,8 @@ h1 {
 
 #sokruta {
     position: absolute;
+    height: 10%;
+    right: 7%;
     background-color: rgb(255, 255, 255);
     border-style: solid;
     border: 1.5px groove gray;
@@ -137,21 +150,17 @@ h1 {
     height: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.65rem;
-    bottom: -45%;
-    right: 15%;
     z-index: 10;
 }
 
+#hej {
+    z-index: 100;
+}
 #knapp2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 3rem;
     background-color: rgb(255, 255, 255);
     position: absolute;
-}
-
-#hej {
-    background-color: #7700ff;
-    z-index: 100;
 }
 
 option {
@@ -222,59 +231,67 @@ span{
 }
 
 .span1{
-    clip-path: polygon(0 46%, 100% 50%, 0 8%);
+    clip-path: polygon(0 46%, 100% 2%, 0 5%);
     background-color: #fffb00;
-    top: 120px;
+    top: 235px;
     left: 0;
+    z-index: 10;
 }
 
 .span2{
-    clip-path: polygon(100% 46%, 0 50%, 100% 8%);
+    clip-path: polygon(100% 46%, 0 7%, 100% 6%);
     background-color: #ff4fa1;
-    top: 120px;
+    top: 223.5px;
     right: 0;
+    z-index: 11;
 }
 
 .span3{
-    clip-path: polygon(50% 0%, 8% 100%, 46% 100%);
+    clip-path: polygon(96% 0%, 8% 80%, 46% 100%);
     background-color: #ffaa00;
     bottom: 0;
-    left: 120px;
+    left: 10px;
+    z-index: 10;
 }
 
 .span4{
-    clip-path: polygon(50% 100%, 46% 0, 8% 0);
+    clip-path: polygon(57% 100%, 50% 0, 10% 0);
     background-color: #22ff00;
     top: 0;
-    left: 120px;
+    left: 102px;
+    z-index: 11;
 }
   
 .span5{
-    clip-path: polygon(0 46%, 100% 50%, 0 8%);
+    clip-path: polygon(0 46%, 100% 87.5%, 0 -8%);
     background-color: #00aeff;
-    top: 120px;
+    top: 30px;
     left: 0;
+    z-index: 10;
 }
 
 .span6{
     clip-path: polygon(0 46%, 100% 50%, 0 8%);
-    background-color: #ea00ff;
+    background-color: #3300ff;
     top: 120px;
     left: 0;
+    z-index: 11;
 }
 
 .span7{
-    clip-path: polygon(50% 0%, 8% 100%, 46% 100%);
+    clip-path: polygon(50% 0%, -8% 100%, 60% 100%);
     background-color: #e100ff;
     bottom: 0;
     left: 120px;
+    z-index: 10;
 }
 
 .span8{
     clip-path: polygon(0 46%, 100% 50%, 0 8%);
-    background-color: #ff00f7;
+    background-color: #ff0000;
     top: 120px;
     left: 0;
+    z-index: 11;
 }
 
 .box1 .span3 b{
@@ -290,7 +307,7 @@ span{
 }
 
 .box1 .span4 b, .box2 .span4 b{
-    transform: translate(-50%, -50%) rotate(-85deg);
+    transform: translate(-50%, -50%) rotate(-55deg);
 }
   
 .box1{
@@ -312,7 +329,16 @@ span b{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-  
+
+#hjul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 500px;
+    z-index: 200;
+}
+
+/*
 .spin{
     position: absolute;
     top: 50%;
@@ -328,7 +354,7 @@ span b{
     font-weight: bold;
     font-size: 22px;
     cursor: pointer;
-}
+}*/
 
 .spin:active{
     width: 70px;
@@ -338,11 +364,18 @@ span b{
   
 .mainbox.animate:after{
     animation: animateArrow 0.7s ease infinite;
+    
 }
 
 @keyframes animateArrow{
     50%{
       right: -40px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    nav {
+        padding-left: 0;
     }
 }
   

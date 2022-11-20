@@ -2,9 +2,14 @@ require 'sinatra'
 require 'slim'
 require 'sinatra/reloader'
 
-
+enable :sessions
 
 get('/') do
+
+    if session[:lank] == nil 
+        session[:lank] = 0
+    end
+    
     slim(:hem)
 end
 
@@ -15,8 +20,6 @@ end
 get('/tabell') do
     slim(:buss)
 end
-
-enable :sessions
 
 post('/matstallen') do
     rasttid = params[:rasttid].to_i
@@ -132,7 +135,7 @@ end
 post ('/karta') do
 
     i = params[:kartstalle].to_i
-    #<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2132.526952860847!2d11.974780599999997!3d57.6905167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff30cb0e6c031%3A0x512e1a3cb4192a9!2sNTI%20Gymnasiet%20Johanneberg!5e0!3m2!1ssv!2sse!4v1668247435575!5m2!1ssv!2sse" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     sokvag = [
         "2132.5267852234583!2d11.972591915322063!3d57.69051954835806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff30cb0e6c031%3A0x512e1a3cb4192a9!2sNTI%20Gymnasiet%20Johanneberg!5e0!3m2!1ssv!2sse!4v1665343764003!5m2!1ssv!2sse",
         "2143.5557568937297!2d11.975970847812615!3d57.69197397864173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff37497e24633%3A0x2e00b5078eb5d296!2sBaguetteria%20No%201!5e0!3m2!1ssv!2sse!4v1668245870668!5m2!1ssv!2sse",
@@ -155,6 +158,7 @@ post ('/karta') do
     ]
 
     session[:lank] = sokvag[i]
+    session[:indes] = i
 
     redirect('/')
 end

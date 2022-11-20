@@ -1,6 +1,5 @@
 function myfunction(){
-
-
+	
 	var x = 1024; //min value
 	var y = 9999; // max value
 
@@ -14,3 +13,4 @@ function myfunction(){
 		element.classList.add('animate');
 	}, 5000); //5000 = 5 second
 }
+
