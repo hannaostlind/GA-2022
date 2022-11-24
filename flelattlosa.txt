@@ -5,3 +5,5 @@ vad är wheel i nav css?
 
 spinhjul
 
+karta sökruta
+

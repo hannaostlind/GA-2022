@@ -28,29 +28,29 @@ form class="fraga12" action="/matstallen" method="POST"
 /*- if session[:lank] == nil 
     - session[:lank] = 0
 
+#kartaruta 
+    <iframe id="kartatest" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d#{session[:lank]}" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
+    form id="form" action="/karta" method="POST"
+        select id="sokruta" name="kartstalle"
+            option value="o"NTI Johanneberg 
+            option value="1"Baguetterian          
+            option value="2"Jättebaguetten
+            option value="3"Coop                
+            option value="4"Pita
+            option value="5"Le Pain          
+            option value="6"Burger King
+            option value="7"Golden Lee
+            option value="8"Seaside                
+            option value="9"Subway; Domkyrkan
+            option value="10"Subway; Kungsportsplatsen           
+            option value="11"Subway; Olivedal                
+            option value="12"Sushi Vimi
+            option value="13"Taj Mahal  
+            option value="14"Picadeli
+            option value="15"Vasa Pizza
+            option value="16"7 eleven; nordstan                
+            option value="17"7 eleven; Göteborg Central
+        input id="knapp2" type="submit" value="Hitta"/
 
-<iframe id="kartatest" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d#{session[:lank]}" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">    
-    #hej
-        form action="/karta" method="POST"
-            select id="sokruta" name="kartstalle"
-                option value="o"NTI Johanneberg 
-                option value="1"Baguetterian          
-                option value="2"Jättebaguetten
-                option value="3"Coop                
-                option value="4"Pita
-                option value="5"Le Pain          
-                option value="6"Burger King
-                option value="7"Golden Lee
-                option value="8"Seaside                
-                option value="9"Subway; Domkyrkan
-                option value="10"Subway; Kungsportsplatsen           
-                option value="11"Subway; Olivedal                option value="12"Sushi Vimi
-                option value="13"Taj Mahal  
-                option value="14"Picadeli
-                option value="15"Vasa Pizza
-                option value="16"7 eleven; nordstan                
-                option value="17"7 eleven; Göteborg Central
-            input id="knapp2" type="submit" value="Hitta"/
-        
 
 
