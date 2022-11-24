@@ -139,23 +139,37 @@ h1 {
     background-color: rgb(241, 255, 228);
 }
 
-#sokruta {
+#kartruta {
+    width: 500px;
+    height: 500px;
+    background-color: #00aeff;
+}
+
+#formular {
     position: absolute;
-    height: 10%;
-    right: 7%;
+    top: 1px;
+}
+
+#karttest {
+    z-index: 100;   
+}
+
+#sokruta {
     background-color: rgb(255, 255, 255);
     border-style: solid;
     border: 1.5px groove gray;
     width: 11rem;
     height: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.65rem;
-    z-index: 10;
+    font-size: 0.65rem; 
 }
 
 #hej {
-    z-index: 100;
+    position: absolute;
+    z-index: 1000;
+    background-color: #00aeff;
 }
+
 #knapp2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 3rem;
@@ -222,123 +236,14 @@ option {
     overflow: hidden;
     transition: all ease 5s;
 }
-  
-span{
-    width: 50%; 
-    height: 50%;
-    display: inline-block;
-    position: absolute;
-}
-
-.span1{
-    clip-path: polygon(0 46%, 100% 2%, 0 5%);
-    background-color: #fffb00;
-    top: 235px;
-    left: 0;
-    z-index: 10;
-}
-
-.span2{
-    clip-path: polygon(100% 46%, 0 7%, 100% 6%);
-    background-color: #ff4fa1;
-    top: 223.5px;
-    right: 0;
-    z-index: 11;
-}
-
-.span3{
-    clip-path: polygon(96% 0%, 8% 80%, 46% 100%);
-    background-color: #ffaa00;
-    bottom: 0;
-    left: 10px;
-    z-index: 10;
-}
-
-.span4{
-    clip-path: polygon(57% 100%, 50% 0, 10% 0);
-    background-color: #22ff00;
-    top: 0;
-    left: 102px;
-    z-index: 11;
-}
-  
-.span5{
-    clip-path: polygon(0 46%, 100% 87.5%, 0 -8%);
-    background-color: #00aeff;
-    top: 30px;
-    left: 0;
-    z-index: 10;
-}
-
-.span6{
-    clip-path: polygon(0 46%, 100% 50%, 0 8%);
-    background-color: #3300ff;
-    top: 120px;
-    left: 0;
-    z-index: 11;
-}
-
-.span7{
-    clip-path: polygon(50% 0%, -8% 100%, 60% 100%);
-    background-color: #e100ff;
-    bottom: 0;
-    left: 120px;
-    z-index: 10;
-}
-
-.span8{
-    clip-path: polygon(0 46%, 100% 50%, 0 8%);
-    background-color: #ff0000;
-    top: 120px;
-    left: 0;
-    z-index: 11;
-}
-
-.box1 .span3 b{
-    transform: translate(-50%, -50%) rotate(-270deg);
-}
-
-.box1 .span1 b, .box2 .span1 b{
-    transform: translate(-50%, -50%) rotate(185deg);
-}
-
-.box2 .span3 b{
-    transform: translate(-50%, -50%) rotate(90deg);
-}
-
-.box1 .span4 b, .box2 .span4 b{
-    transform: translate(-50%, -50%) rotate(-55deg);
-}
-  
-.box1{
-    width: 100%;
-    height: 100%;
-    transform: rotate(-135deg);
-}
-
-.box2{
-    width: 100%;
-    height: 100%;
-    transform: rotate(-135deg);
-}
-
-span b{
-    font-size: 22px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 #hjul {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 500px;
-    z-index: 200;
+    left: -22.5%;
+    height: 520px;
+
 }
 
-/*
 .spin{
     position: absolute;
     top: 50%;
@@ -354,14 +259,8 @@ span b{
     font-weight: bold;
     font-size: 22px;
     cursor: pointer;
-}*/
-
-.spin:active{
-    width: 70px;
-    height: 70px;
-    font-size: 20px;
 }
-  
+
 .mainbox.animate:after{
     animation: animateArrow 0.7s ease infinite;
     
