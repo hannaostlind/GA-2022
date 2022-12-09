@@ -22,97 +22,216 @@ get('/tabell') do
 end
 
 post('/matstallen') do
-    rasttid = params[:rasttid].to_i
+    tid = params[:rasttid].to_i
     sugenpa = params[:sugenpa]
 
-
-    if rasttid.class != Integer
-        
-    end
 
     platser = {
 
         ingetspeciellt: {
-            siffra1: [
+            u10: [
+                "Cafét"
+            ],
+
+            u20: [
+               
+            ],
+
+            u30: [
+                "Pita", 
                 "Baguetterian",
+                "Jättebaguetten"
+            ],
+
+            u40: [
+
+            ],
+
+            u50: [
+                "Coop",                 
+                "Subway; Kungsportsplatsen", 
+                "Subway; Domkyrkan" 
+            ],
+
+            u60: [
+                "Vasa Pizza"
+            ],
+
+            u70: [
+                "Subway; Olivedal",
+                "Le pain",
+                "Sushi Vimi"
+
+            ],
+
+            o70: [
+                "Seaside",
+                "Golden Lee", 
+                "Taj Mahal"
+            ]
+        },
+
+        sitta: {
+            u10: [
+
+            ],
+
+            u20: [
+               
+            ],
+
+            u30: [
+                "Baguetterian"
+            ],
+
+            u40: [
+
+            ],
+
+            u50: [
+                "Subway; Kungsportsplatsen", 
+                "Subway; Domkyrkan"
+            ],
+
+            u60: [
+                "Vasa Pizza"
+            ],
+
+            u70: [
+                "Subway; Olivedal",
+                "Le pain",
+                "Sushi Vimi"
+            ],
+
+            o70: [
+                "Seaside",
+                "Taj Mahal"
+            ]
+        },
+
+        mycketmat: {
+            u10: [
+            
+            ],
+
+            u20: [
+               
+            ],
+
+            u30: [
+               
+            ],
+
+            u40: [
+
+            ],
+
+            u50: [
+                "Coop"
+
+            ],
+
+            u60: [
+
+            ],
+
+            u70: [
+                "Subway; Olivedal",
+                "Le pain"
+            ],
+
+            o70: [
+                "Seaside"
+            ]
+        },
+
+        snabb: {
+            u10: [
+                "Cafét"
+            ],
+
+            u20: [
+               
+            ],
+
+            u30: [
+                "Pita", 
+                "Baguetterian",
+                "Jättebaguetten"
+            ],
+
+            u40: [
+
+            ],
+
+            u50: [
+                "Coop"
+
+            ],
+
+            u60: [
+               
+            ],
+
+            u70: [
+            
+            ],
+
+            o70: [
+                
+            ]
+        },
+
+        snacks: {
+            u10: [
+                "Cafét"
+            ],
+
+            u20: [
+               
+            ],
+
+            u30: [
+                "Baguetterian",
+                "Jättebaguetten"
+            ],
+
+            u40: [
+
+            ],
+
+            u50: [
+                   "Coop"
+
+            ],
+
+            u60: [
+               
+            ],
+
+            u70: [
+                "Subway; Olivedal"
+            ],
+
+            o70: [
+                "Baguetterian", #sitta på baguetterian? under 20?
                 "Jättebaguetten",
                 "Cafét", 
                 "Coop",
-                "Pita", 
+                "Pita", #sitta på pita
                 "Le pain",
-                "Burger King", 
+                "Burger King", #tid?
                 "Golden Lee", 
                 "Seaside", 
                 "Subway; Domkyrkan", 
                 "Subway; Kungsportsplatsen", 
                 "Subway; Olivedal", 
                 "Sushi Vimi", 
-                "Taj Mahal", 
+                "Taj Mahal", #o70?
                 "Picadeli", 
-                "Vasa Pizza",
+                "Vasa Pizza", #mkt mat?
                 "7-eleven; Nordstan", 
-                "7-eleven; Göteborg Central"],
-
-            siffra2: [
-                "Baguetterian",
-                "Jättebaguetten",
-                "Cafét", 
-                "Pita"]
-        },
-
-        sitta: {
-            u25: [
-            "Baguetterian",
-            "Jättebaguetten",
-            "Cafét",
-            "Pita"
-            ],
-
-            u55: [
-            "Le Pain",
-            ],
-
-            u80: [
-            "Golden Lee", 
-            "Seaside", 
-            "Subway; Domkyrkan", 
-            "Subway; Kungsportsplatsen", 
-            "Subway; Olivedal", 
-            "Sushi Vimi", 
-            "Taj Mahal", 
-            "Picadeli", 
-            "Vasa Pizza",
-            ]
-
-        },
-
-        mycketmat: {
-            siffra1: [
-
-            ],
-
-            siffra2: [
-
-            ]            
-        },
-
-        snabb: {
-            siffra1: [
-
-            ],
-
-            siffra2: [
-
-            ]
-        },
-
-        snacks: {
-            siffra1: [
-
-            ],
-
-            siffra2: [
-
+                "7-eleven; Göteborg Central" 
             ]
         }
     }
@@ -121,11 +240,29 @@ post('/matstallen') do
     when sugenpa == "ingetspeciellt"
         
         case
-        when rasttid <= 60 && rasttid >= 30
-            session[:stallen] = platser[:ingetspeciellt][:siffra1]
+        when tid <= 10
+            session[:stallen] = platser[:ingetspeciellt][:u10] + platser[:ingetspeciellt][:o70]
 
-        when rasttid <= 30
-            session[:stallen] = platser[:ingetspeciellt][:siffra2]
+        when tid <= 10 && tid >= 20
+            session[:stallen] = platser[:ingetspeciellt][:u20]
+
+        when tid <= 20 && tid >= 30
+            session[:stallen] = platser[:ingetspeciellt][:u30]
+        
+        when tid <= 30 && tid >= 40
+            session[:stallen] = platser[:ingetspeciellt][:u40]
+        
+        when tid <= 40 && tid >= 50
+            session[:stallen] = platser[:ingetspeciellt][:u50]
+        
+        when tid <= 50 && tid >= 60
+            session[:stallen] = platser[:ingetspeciellt][:u60]
+
+        when tid <= 60 && tid >= 70
+            session[:stallen] = platser[:ingetspeciellt][:u70]
+
+        when tid >= 70
+            session[:stallen] = platser[:ingetspeciellt][:o70]
         end
     end
     

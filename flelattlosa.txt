@@ -1,10 +1,9 @@
 få kartan att fungera på första, min if fungerar inte 
     varken i hem.slim el app.rb
 
-
-färger
-
 nti loggan
 
 boxshadow för knapp2 måste ligga under sokrutan
+
+
 
