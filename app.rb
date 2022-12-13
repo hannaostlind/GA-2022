@@ -5,10 +5,6 @@ require 'sinatra/reloader'
 enable :sessions
 
 get('/') do
-
-    if session[:lank] == nil 
-        session[:lank] = 0
-    end
     
     slim(:hem)
 end
@@ -300,5 +296,10 @@ post ('/karta') do
     redirect('/')
 end
 
+get('/kill') do
+    session.destroy
+    redirect('/')
+
+end
 
 

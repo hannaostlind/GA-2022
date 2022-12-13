@@ -26,13 +26,13 @@ form class="fraga12" action="/matstallen" method="POST"
                 p
 
 - if session[:lank] == nil 
-    - session[:lank] = 0
+    - session[:lank] = "2132.5267852234583!2d11.972591915322063!3d57.69051954835806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff30cb0e6c031%3A0x512e1a3cb4192a9!2sNTI%20Gymnasiet%20Johanneberg!5e0!3m2!1ssv!2sse!4v1665343764003!5m2!1ssv!2sse"
 
 #kartaruta 
     <iframe id="kartatest" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d#{session[:lank]}" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
     form id="form" action="/karta" method="POST"
         select id="sokruta" name="kartstalle"
-            option value="o"NTI Johanneberg 
+            option value="0"NTI Johanneberg 
             option value="1"Baguetterian          
             option value="2"Jättebaguetten
             option value="3"Coop                
