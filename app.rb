@@ -30,50 +30,86 @@ post('/matstallen') do
             ],
 
             u20: [
-               
+                "Cafét"
             ],
 
             u30: [
                 "Pita", 
                 "Baguetterian",
-                "Jättebaguetten"
+                "Jättebaguetten",
+                "Cafét"
             ],
 
             u40: [
-
+                "Pita", 
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét"
             ],
 
             u50: [
                 "Coop",                 
                 "Subway; Kungsportsplatsen", 
-                "Subway; Domkyrkan" 
+                "Subway; Domkyrkan",
+                "Pita", 
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét"
             ],
 
             u60: [
-                "Vasa Pizza"
+                "Vasa Pizza",
+                "7-eleven; Nordstan",
+                "7-eleven; Göteborg Central",
+                "Coop",                 
+                "Subway; Kungsportsplatsen", 
+                "Subway; Domkyrkan",
+                "Pita", 
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét"
             ],
 
             u70: [
                 "Subway; Olivedal",
                 "Le pain",
-                "Sushi Vimi"
-
+                "Sushi Vimi",
+                "Vasa Pizza",
+                "7-eleven; Nordstan",
+                "7-eleven; Göteborg Central",
+                "Coop",                 
+                "Subway; Kungsportsplatsen", 
+                "Subway; Domkyrkan",
+                "Pita", 
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét"
             ],
 
             o70: [
                 "Seaside",
                 "Golden Lee", 
-                "Taj Mahal"
+                "Taj Mahal",
+                "Vasa Pizza",
+                "7-eleven; Nordstan",
+                "7-eleven; Göteborg Central",
+                "Coop",                 
+                "Subway; Kungsportsplatsen", 
+                "Subway; Domkyrkan",
+                "Pita", 
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét"
             ]
         },
 
         sitta: {
             u10: [
-
+                "¯\\_(ツ)_/¯",
             ],
 
             u20: [
-               
+                "¯\\_(ツ)_/¯",
             ],
 
             u30: [
@@ -81,45 +117,60 @@ post('/matstallen') do
             ],
 
             u40: [
-
+                "Baguetterian"
             ],
 
             u50: [
                 "Subway; Kungsportsplatsen", 
-                "Subway; Domkyrkan"
+                "Subway; Domkyrkan",
+                "Baguetterian"
             ],
 
             u60: [
-                "Vasa Pizza"
+                "Vasa Pizza",
+                "Subway; Kungsportsplatsen", 
+                "Subway; Domkyrkan",
+                "Baguetterian"
             ],
 
             u70: [
                 "Subway; Olivedal",
                 "Le pain",
-                "Sushi Vimi"
+                "Sushi Vimi",
+                "Vasa Pizza",
+                "Subway; Kungsportsplatsen", 
+                "Subway; Domkyrkan",
+                "Baguetterian"
             ],
 
             o70: [
                 "Seaside",
-                "Taj Mahal"
+                "Taj Mahal",
+                "Subway; Olivedal",
+                "Le pain",
+                "Sushi Vimi",
+                "Vasa Pizza",
+                "Subway; Kungsportsplatsen", 
+                "Subway; Domkyrkan",
+                "Baguetterian"
             ]
         },
 
         mycketmat: {
             u10: [
-            
+                "¯\\_(ツ)_/¯",
             ],
 
             u20: [
-               
+                "¯\\_(ツ)_/¯",
             ],
 
             u30: [
-               
+                "¯\\_(ツ)_/¯",
             ],
 
             u40: [
-
+                "¯\\_(ツ)_/¯",
             ],
 
             u50: [
@@ -128,16 +179,24 @@ post('/matstallen') do
             ],
 
             u60: [
-
+                "7-eleven; Nordstan", 
+                "7-eleven; Göteborg Central",
+                "Coop"
             ],
 
             u70: [
                 "Subway; Olivedal",
-                "Le pain"
+                "Le pain",
+                "7-eleven; Nordstan", 
+                "7-eleven; Göteborg Central",
+                "Coop"
             ],
 
             o70: [
-                "Seaside"
+                "Seaside",
+                "7-eleven; Nordstan", 
+                "7-eleven; Göteborg Central",
+                "Coop"
             ]
         },
 
@@ -147,34 +206,50 @@ post('/matstallen') do
             ],
 
             u20: [
-               
+                "Cafét"
             ],
 
             u30: [
                 "Pita", 
                 "Baguetterian",
-                "Jättebaguetten"
+                "Jättebaguetten",
+                "Cafét"
             ],
 
             u40: [
-
+                "Pita", 
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét"
             ],
 
             u50: [
-                "Coop"
-
+                "Coop",
+                "Pita", 
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét"
             ],
 
             u60: [
-               
+                "Pita", 
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét"
             ],
 
             u70: [
-            
+                "Pita", 
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét"
             ],
 
             o70: [
-                
+                "Pita", 
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét"
             ]
         },
 
@@ -184,29 +259,41 @@ post('/matstallen') do
             ],
 
             u20: [
-               
+                "Cafét"
             ],
 
             u30: [
                 "Baguetterian",
-                "Jättebaguetten"
+                "Jättebaguetten",
+                "Cafét"
             ],
 
             u40: [
-
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét"
             ],
 
             u50: [
-                   "Coop"
-
+                "Coop",
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét"
             ],
 
             u60: [
-               
+                "7-eleven; Nordstan", 
+                "7-eleven; Göteborg Central",
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét"
             ],
 
             u70: [
-                "Subway; Olivedal"
+                "Subway; Olivedal",
+                "Baguetterian",
+                "Jättebaguetten",
+                "Cafét"
             ],
 
             o70: [
@@ -216,7 +303,7 @@ post('/matstallen') do
                 "Coop",
                 "Pita", #sitta på pita
                 "Le pain",
-                "Burger King", #tid?
+                "Burger King", #tid?-------
                 "Golden Lee", 
                 "Seaside", 
                 "Subway; Domkyrkan", 
@@ -224,10 +311,10 @@ post('/matstallen') do
                 "Subway; Olivedal", 
                 "Sushi Vimi", 
                 "Taj Mahal", #o70?
-                "Picadeli", 
+                "Picadeli", #---------
                 "Vasa Pizza", #mkt mat?
-                "7-eleven; Nordstan", 
-                "7-eleven; Göteborg Central" 
+                "7-eleven; Nordstan", #------------ u60?
+                "7-eleven; Göteborg Central" #-------- u60?
             ]
         }
     }
@@ -236,31 +323,152 @@ post('/matstallen') do
     when sugenpa == "ingetspeciellt"
         
         case
-        when tid <= 10
-            session[:stallen] = platser[:ingetspeciellt][:u10] + platser[:ingetspeciellt][:o70]
+        when tid <= 11
+            session[:stallen] = platser[:ingetspeciellt][:u10] 
 
-        when tid <= 10 && tid >= 20
+        when tid >= 10 && tid <= 21
             session[:stallen] = platser[:ingetspeciellt][:u20]
 
-        when tid <= 20 && tid >= 30
-            session[:stallen] = platser[:ingetspeciellt][:u30]
+        when tid >= 20 && tid <= 31
+            session[:stallen] = platser[:ingetspeciellt][:u30] 
         
-        when tid <= 30 && tid >= 40
+        when tid >= 30 && tid <= 41
             session[:stallen] = platser[:ingetspeciellt][:u40]
         
-        when tid <= 40 && tid >= 50
-            session[:stallen] = platser[:ingetspeciellt][:u50]
+        when tid >= 40 && tid <= 51
+            session[:stallen] = platser[:ingetspeciellt][:u50] 
         
-        when tid <= 50 && tid >= 60
+        when tid >= 50 && tid <= 61
             session[:stallen] = platser[:ingetspeciellt][:u60]
 
-        when tid <= 60 && tid >= 70
+        when tid >= 60 && tid <= 71
             session[:stallen] = platser[:ingetspeciellt][:u70]
 
         when tid >= 70
             session[:stallen] = platser[:ingetspeciellt][:o70]
         end
+
+
+
+    when sugenpa == "sitta"
+        
+        case
+        when tid <= 11
+            session[:stallen] = platser[:sitta][:u10] 
+
+        when tid >= 10 && tid <= 21
+            session[:stallen] = platser[:sitta][:u20]
+
+        when tid >= 20 && tid <= 31
+            session[:stallen] = platser[:sitta][:u30] 
+        
+        when tid >= 30 && tid <= 41
+            session[:stallen] = platser[:sitta][:u40]
+        
+        when tid >= 40 && tid <= 51
+            session[:stallen] = platser[:sitta][:u50] 
+        
+        when tid >= 50 && tid <= 61
+            session[:stallen] = platser[:sitta][:u60]
+
+        when tid >= 60 && tid <= 71
+            session[:stallen] = platser[:sitta][:u70]
+
+        when tid >= 70
+            session[:stallen] = platser[:sitta][:o70]
+        end
+
+
+    
+    when sugenpa == "mycketmat"
+        
+        case
+        when tid <= 11
+            session[:stallen] = platser[:mycketmat][:u10] 
+
+        when tid >= 10 && tid <= 21
+            session[:stallen] = platser[:mycketmat][:u20]
+
+        when tid >= 20 && tid <= 31
+            session[:stallen] = platser[:mycketmat][:u30] 
+        
+        when tid >= 30 && tid <= 41
+            session[:stallen] = platser[:mycketmat][:u40]
+        
+        when tid >= 40 && tid <= 51
+            session[:stallen] = platser[:mycketmat][:u50] 
+        
+        when tid >= 50 && tid <= 61
+            session[:stallen] = platser[:mycketmat][:u60]
+
+        when tid >= 60 && tid <= 71
+            session[:stallen] = platser[:mycketmat][:u70]
+
+        when tid >= 70
+            session[:stallen] = platser[:mycketmat][:o70]
+        end
+
+
+
+    when sugenpa == "snabb"
+        
+        case
+        when tid <= 11
+            session[:stallen] = platser[:snabb][:u10] 
+
+        when tid >= 10 && tid <= 21
+            session[:stallen] = platser[:snabb][:u20]
+
+        when tid >= 20 && tid <= 31
+            session[:stallen] = platser[:snabb][:u30] 
+        
+        when tid >= 30 && tid <= 41
+            session[:stallen] = platser[:snabb][:u40]
+        
+        when tid >= 40 && tid <= 51
+            session[:stallen] = platser[:snabb][:u50] 
+        
+        when tid >= 50 && tid <= 61
+            session[:stallen] = platser[:snabb][:u60]
+
+        when tid >= 60 && tid <= 71
+            session[:stallen] = platser[:snabb][:u70]
+
+        when tid >= 70
+            session[:stallen] = platser[:snabb][:o70]
+        end
+
+
+
+    when sugenpa == "snacks"
+        
+        case
+        when tid <= 11
+            session[:stallen] = platser[:snacks][:u10] 
+
+        when tid >= 10 && tid <= 21
+            session[:stallen] = platser[:snacks][:u20]
+
+        when tid >= 20 && tid <= 31
+            session[:stallen] = platser[:snacks][:u30] 
+        
+        when tid >= 30 && tid <= 41
+            session[:stallen] = platser[:snacks][:u40]
+        
+        when tid >= 40 && tid <= 51
+            session[:stallen] = platser[:snacks][:u50] 
+        
+        when tid >= 50 && tid <= 61
+            session[:stallen] = platser[:snacks][:u60]
+
+        when tid >= 60 && tid <= 71
+            session[:stallen] = platser[:snacks][:u70]
+
+        when tid >= 70
+            session[:stallen] = platser[:snabb][:o70]
+        end
     end
+
     
     redirect('/')
 end
