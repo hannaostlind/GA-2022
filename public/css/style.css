@@ -212,6 +212,7 @@ option {
 
 #knapp:hover, #knapp2:hover {
     cursor: pointer;
+    box-shadow: 0 0 5px 4px rgb(206, 206, 206);
 }
 
 /*HJUL*/
