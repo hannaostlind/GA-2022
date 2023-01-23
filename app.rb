@@ -13,9 +13,10 @@ get('/hjul') do
     slim(:hjul)
 end
 
-get('/tabell') do
+get('/buss') do
     slim(:buss)
 end
+
 
 post('/matstallen') do
     tid = params[:rasttid].to_i
@@ -364,10 +365,5 @@ post ('/karta') do
     redirect('/')
 end
 
-get('/kill') do
-    session.destroy
-    redirect('/')
-
-end
 
 

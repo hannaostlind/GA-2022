@@ -283,4 +283,28 @@ option {
 }
 
 
+/*BUSS*/
+
+#gruppbuss {
+    display: flex;
+    margin-right: 150px;
+    min-width: 500px;
+}
+
+#rad1 {
+    display: grid;
+    place-items: end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+#rad2, #rad1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    list-style: none;
+}
+
+
+
   
