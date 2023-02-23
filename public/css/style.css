@@ -305,6 +305,24 @@ option {
     list-style: none;
 }
 
+#plan {
+
+    font-size: 35px;
+    color: #000;
+}
+
+#lank {
+    display: grid;
+    place-content: center;
+    margin: 45px;  
+    text-decoration: none;
+    width: 440px;
+    height: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 60px;
+    background-color: rgb(220, 130, 232);   
+    box-shadow: 0 0 5px 2px rgb(206, 206, 206);
+}
 
 
   
